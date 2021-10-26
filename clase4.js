@@ -110,28 +110,118 @@
 
 // ejercicio con waka
 
-let x = Number(prompt("Valor uno"));
-let y = Number(prompt("valor dos"));
-let operacion = prompt("ingrese operacion");
+// let x = Number(prompt("Valor uno"));
+// let y = Number(prompt("valor dos"));
+// let operacion = prompt("ingrese operacion");
 
-if (isNaN(x)) {
-    console.log("no es un numero");
-    x = 0;
+// if (isNaN(x)) {
+//     console.log("no es un numero");
+//     x = 0;
+// }
+// if (isNaN(y)) {
+//     console.log("no es un numero");
+//     y = 0;
+// }
+// switch (operacion) {
+//     case "suma":
+//         console.log(x+y);
+//         break;
+//     case "resta":
+//         console.log(x-y);
+
+//     default:
+//         alert("operacion no contemplada");
+//     break;
+// }
+
+// CLASE 5
+
+// let nombre;
+// let esRey = false;
+// while(nombre !== "Arturo" || esRey !==true){
+// nombre = prompt("cual es su nombre?");
+// if (nombre ==="Arturo") {
+//     esRey=confirm("Sos Rey?");
+//     if(esRey === true){;
+//     alert("sacaste el promt");
+//     }else{
+//         alert("NO sos rey");
+//     }
+// }else{
+//     alert("segui participando");
+// }
+// }
+
+//CLASE 6 - JS
+
+// function suma (a,b) {
+//     console.log(a + b);
+//         return suma;
+// }
+
+// function hello(nombre) {
+//     alert('hola '+nombre);
+// }
+// function ingreso(funcion) {
+//     let nombre = prompt('ingrese su nombre');
+//     funcion(nombre);
+// }
+// ingreso (hello);
+
+//ejercicio de arrays - Calculadora
+
+// let num1 = Number(prompt('ingrese un numero'));
+// let op = prompt('ingrese operacion');
+// let num2 = Number(prompt('Ingrese otro numero'));
+
+// function calculadora(num1,num2,op) {
+//     if(isNaN(num1) || isNaN(num2)){
+//         return 'ingresa un numero valido'
+//     }
+//     switch (op) {
+//         case '+':
+//         return num1+num2;
+//         case '-':
+//             return num1-num2;
+//         case 'x':
+//         return num1*num2;
+//         case '/':
+//             return num1/num2;
+        
+//         default:
+//             return 'Operacion no valida';
+//     }
+// }
+// console.log(calculadora(num1,num2,op));
+
+// jercicio P P T
+
+const opciones = ['piedra';'papel','tijera'];
+
+function bot(){
+  let jugada = Math.round(Math.random()*2);
+  return jugada;
 }
-if (isNaN(y)) {
-    console.log("no es un numero");
-    y = 0;
+function player(params) {
+    let jugada = prompt('ingrese piedra, papel o tijera');
+    jugada=opciones.indexOf(jugada);
+    return jugada
 }
-switch (operacion) {
-    case "suma":
-        console.log(x+y);
+function definicion(bot,player) {
+    switch (true) {
+        case bot===player:
+            console.log('empate');
         break;
-    case "resta":
-        console.log(x-y);
-
-    default:
-        alert("operacion no contemplada");
-    break;
+        case bot===0 && player===1:
+            console.log('gano player');
+            break;
+        case bot===0 && player===2:
+            console.log('Gano el bot');
+            break;
+        case bot===1 && player===0:
+            console.log('Gano el bot');
+        default:
+            break;
+    }
 }
-
 
