@@ -196,32 +196,32 @@
 
 // jercicio P P T
 
-const opciones = ['piedra';'papel','tijera'];
+// const opciones = ['piedra';'papel','tijera'];
 
-function bot(){
-  let jugada = Math.round(Math.random()*2);
-  return jugada;
-}
-function player(params) {
-    let jugada = prompt('ingrese piedra, papel o tijera');
-    jugada=opciones.indexOf(jugada);
-    return jugada
-}
-function definicion(bot,player) {
-    switch (true) {
-        case bot===player:
-            console.log('empate');
-        break;
-        case bot===0 && player===1:
-            console.log('gano player');
-            break;
-        case bot===0 && player===2:
-            console.log('Gano el bot');
-            break;
-        case bot===1 && player===0:
-            console.log('Gano el bot');
-        default:
-            break;
-    }
-}
+// function bot(){
+//   let jugada = Math.round(Math.random()*2);
+//   return jugada;
+// }
+// function player(params) {
+//     let jugada = prompt('ingrese piedra, papel o tijera');
+//     jugada=opciones.indexOf(jugada);
+//     return jugada
+// }
+// function definicion(bot,player) {
+//     switch (true) {
+//         case bot===player:
+//             console.log('empate');
+//         break;
+//         case bot===0 && player===1:
+//             console.log('gano player');
+//             break;
+//         case bot===0 && player===2:
+//             console.log('Gano el bot');
+//             break;
+//         case bot===1 && player===0:
+//             console.log('Gano el bot');
+//         default:
+//             break;
+//     }
+// }
 
